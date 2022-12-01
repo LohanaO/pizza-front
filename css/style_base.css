@@ -22,15 +22,21 @@ header {
   background: var(--gray);
   color: var(--white);
   padding: 0.5rem 1.25rem;
-  /*Añadimos flex*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header nav ul {
-  /*Añadimos flex*/
+  display: flex;
+  gap: 13px;
 }
 
 header .header__logo {
-  /*Añadimos flex*/
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
 }
 
 header .header__logo span,
@@ -43,13 +49,16 @@ footer .footer__logo span:nth-child(2) {
 }
 main {
     padding: 35px 0px;
+    
     /* Alto del main: alto viewport - alto Header - alto Footer 
        Me aseguro que el main ocupa todo el alto disponible */
     min-height: calc(100vh - 100px - 150px);  
 }
 
 main .container {
-  /*Añadimos flex*/
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 main section .card {
@@ -71,7 +80,10 @@ main section .delivery span {
 main section .podio {
   background: #fff;
   font-weight: bold;
-  /*Añadimos flex*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 main section .podio h3 {
   color: var(--red);
@@ -87,7 +99,8 @@ main section .podio h3 {
 }
 
 .top5 {
-  /*Añadimos flex*/
+  display: flex;
+  gap: 50px;
 }
 
 .top5 .podio__pizzas ol li {
@@ -96,24 +109,33 @@ main section .podio h3 {
 
 .top5 .podio__img {
   padding-bottom: 60px;
-  /*Añadimos flex*/
+  display: flex;
+  
 }
 
 footer {
   background: #222;
   padding: 19px 20px;
-  /*Añadimos flex*/
+  display: flex;
+  justify-content: space-between;
+
+
+
 }
 
 footer .footer__logo {
   color: var(--lightWhite);
   font-size: 14px;
-  /*Añadimos flex*/
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
 }
 
 footer ul {
-  color: var(--lightWhite);
-  /*Añadimos flex*/
+ color: var(--lightWhite);
+ order: -1;
+ 
 }
 
 @media screen and (max-width:  768px) {
